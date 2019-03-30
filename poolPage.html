@@ -1,0 +1,867 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game of Thrones Pool</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta name="theme-color" content="#fafafa">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row gotHeader">
+            <div class="col-md-12">
+                <img id="headerImg" src="images/faces.jpeg" style=>
+            </div>
+        </div>
+
+        <form class="shadow-lg p-3 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Rules:</h3>
+                    <ol>
+                        <li>
+                            <h5>Predict if each character will be alive or dead at the end of season 8. Receive 1 point
+                                for every correct answer.</h5>
+                        </li>
+                        <li>
+                            <h5>If you predict the character dead, you have the option to predict if they become a
+                                white walker. Gain one extra point if you are correct and lose one point if you
+                                incorrectly predict that they become a white walker.</h5>
+                        </li>
+                        <li>
+                            <h5>Correctly answer the bonus questions for more points.</h5>
+                        </li>
+                        <li>
+                            <h5>Entry with the most points wins the pool. </h5>
+                        </li>
+                    </ol>
+                </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr id="tableHeader">
+                    <th scope="col">
+                        <h3></h3>
+                    </th>
+                    <th scope="col">
+                        <h3>Character:</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>Alive or Dead?</h3>
+                    </th>
+                    <th scope="col">
+                        <h3>White Walker?</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/arya.jpeg"></th>
+                    <td>
+                        <h3>Arya Stark</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/beric.jpeg"></th>
+                    <td>
+                        <h3>Beric Dondarrion</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/bran.jpeg"></th>
+                    <td>
+                        <h3>Bran Stark</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/brienne.jpeg"></th>
+                    <td>
+                        <h3>Brienne of Tarth</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/bronn.jpeg"></th>
+                    <td>
+                        <h3>Bronn</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/cersei.jpeg"></th>
+                    <td>
+                        <h3>Cersei Lannister</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/daenerys.jpeg"></th>
+                    <td>
+                        <h3>Daenerys Targaryen</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/davos.jpeg"></th>
+                    <td>
+                        <h3>Davos Seaworth</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/euron.jpeg"></th>
+                    <td>
+                        <h3>Euron Greyjoy</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/gendry.jpeg"></th>
+                    <td>
+                        <h3>Gendry</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/gilly.jpeg"></th>
+                    <td>
+                        <h3>Gilly</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/grey_worm.jpeg"></th>
+                    <td>
+                        <h3>Grey Worm</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/jaime_lannister.jpeg"></th>
+                    <td>
+                        <h3>Jaime Lannister</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/jon_snow.jpeg"></th>
+                    <td>
+                        <h3>Jon Snow</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/jorah_mormont.jpeg"></th>
+                    <td>
+                        <h3>Jorah Mormont</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/lord_varys.jpeg"></th>
+                    <td>
+                        <h3>Lord Varys</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/melisandre.jpeg"></th>
+                    <td>
+                        <h3>Melisandre</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/missandei.jpeg"></th>
+                    <td>
+                        <h3>Missandei</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/podrick.jpeg"></th>
+                    <td>
+                        <h3>Podrick Payne</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/qyburn.jpeg"></th>
+                    <td>
+                        <h3>Qyburn</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/sam_child.jpeg"></th>
+                    <td>
+                        <h3>Sam (Gilly's Child)</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/samwell_tarly.jpeg"></th>
+                    <td>
+                        <h3>Samwell Tarly</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/sansa_stark.jpeg"></th>
+                    <td>
+                        <h3>Sansa Stark</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/the_hound.jpeg"></th>
+                    <td>
+                        <h3>The Hound</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/the_mountain.jpeg"></th>
+                    <td>
+                        <h3>The Mountain</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/theon_greyjoy.jpeg"></th>
+                    <td>
+                        <h3>Theon Greyjoy</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/tormund.jpeg"></th>
+                    <td>
+                        <h3>Tormund Giantsbane</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/tyrion_lannister.jpeg"></th>
+                    <td>
+                        <h3>Tyrion Lannister</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"><img class="characterImg" src="images/poolTableImgs/yara.jpeg"></th>
+                    <td>
+                        <h3>Yara Greyjoy</h3>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Alive</a>
+                                <a class="dropdown-item" href="#">Dead</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Yes</a>
+                                <a class="dropdown-item" href="#">No</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

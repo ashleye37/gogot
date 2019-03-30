@@ -3,14 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Game of Game of Thrones</title>
+  <title>Game of Thrones Pool</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
 
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -19,8 +22,43 @@
 </head>
 
 <body>
+  <div class="container">
 
-  <p>Hello world!</p>
+      <div class="row gotHeader">
+          <div class="col-md-12">
+              <img id="headerImg" src="images/faces.jpeg" style=>
+          </div>
+      </div>
+
+    <form class="shadow-lg p-3 mb-5">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Welcome to the Game of Thrones Pool!</h3>
+          <h5 class="card-title">Fill in the requested information below.</h5>
+        </div>
+
+        <div class="form-group">
+          <label for="name"> Name: </label>
+          <input name="name" type="text" class="form-control" id="inputName" placeholder="Jon Snow">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="c.lannister@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="numberOfPools">Number of pool entries you would like to submit? (Max 2)</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-secondary btn-lg">Let's Go, Let's Go!</button>
+    </form>
+
+  </div>
 
   <script src="js/main.js"></script>
 
